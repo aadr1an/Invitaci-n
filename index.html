@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Quieres ser mi San Valentín?</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #ffe6f0;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #ff4d88;
+      font-size: 2.5em;
+    }
+    .hello-kitty {
+      width: 200px;
+      margin: 20px auto;
+    }
+    .botones {
+      margin-top: 30px;
+    }
+    button {
+      background: #ff4d88;
+      border: none;
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 1.2em;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    .flores {
+      display: none;
+      margin-top: 30px;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Hola amor 💖</h1>
+  <p>¿Quieres ser mi San Valentín? 🌸🐱</p>
+  <img class="hello-kitty" src="https://i.imgur.com/5WnPj8p.png" alt="Hello Kitty">
+  
+  <div class="botones">
+    <button onclick="aceptar()">¡Sí! 💕</button>
+    <button onclick="rechazar()">No 😢</button>
+  </div>
+
+  <div id="flores" class="flores">🌸🌸🌸 ¡Te amo! 🌸🌸🌸</div>
+
+  <script>
+    function aceptar() {
+      document.getElementById('flores').style.display = 'block';
+    }
+    function rechazar() {
+      alert('Oh no... 😢');
+    }
+  </script>
+</body>
+</html>
